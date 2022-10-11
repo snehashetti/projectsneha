@@ -1,0 +1,52 @@
+
+import random
+b = random.randint(1,10)
+a = input("Guess the number from 1 to 10:")
+a = int(a)
+if ( b != a):
+    print("Player lose and Computer wins")
+        
+if (b == a ):
+    print("Player wins and Computer lose")
+
+
+#Rock paper secissor
+
+import random
+
+print("Lets play Rock paper Scissors")
+a = input(" Enter either Rock, Paper or Scissors: ")
+b = random.choice( "Rock, Paper, Scissors")
+print("\n Computer choose b, Player choose a \n")
+while (True):
+    if ( a == b):
+        print(" Both have choosen same - It's a tie!")
+    elif (a == "Rock"):
+        if ( b == "Paper"):
+            print("You win")
+        else:
+            print("You lose")
+    elif (a == "Paper"):
+        if (b == "Scissors"):
+            print("You win")
+        else:
+            print("You lose")
+    elif (a == "Scissors"):
+        if (b == "Rock"):
+            print("You win")
+        else:
+            print("You lose")
+    else:
+        print("Invalid input")
+    play_again = input("Play again? (y/n): ")
+    if play_again.lower() != "y":
+        
+        break
+    
+            
+           
+    
+
+
+    
+    

@@ -1,0 +1,38 @@
+#palindrome
+
+user = input('Enter the number: ').split(" ")
+a1 = []
+a2 = []
+for num in user:
+    a1.append(num)
+for num in a1:
+    if num == num[:: -1]:
+        a2.append(True)
+    else:
+        a2.append(False)
+if True in a2:
+    print(True)
+else:
+    print(False)
+
+    
+    
+    
+    
+#Shopping list 
+
+items = []
+print("Welcome to Fruits Shop")
+print("Pick!! what you want at our store")
+print("To quit shopping, Enter \"DONE\": ")
+while (True):
+    a = input("Add Item: ")
+    if a != "DONE":
+        items.append(a)
+    if a == "DONE":
+        print("Items in your list: ")
+        for a in items:  
+            print(a)
+        break
+    
+    
